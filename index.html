@@ -7,17 +7,18 @@
     <title>Document</title>
 </head>
 
-<body>
-    <div style="background-color: aqua; width: 50%;">
-        <div>x</div>
+<body style="font-family: Arial, Helvetica, sans-serif;">
+    <div style="width: 100%; display: inline-block;">
+        <img style="height: 30px; float: right; margin-top: 30px; margin-right: 30px;" src="./img/close.png" alt="">
     </div>
 
-    <div style="width: 100%; background-color: blanchedalmond;">
-        <img style="width: 20%; background-color: red; display: inline-block;" src="./img/labirintas.webp" alt="">
-        <div style="background-color: blue; width: 30%; display: inline-block;">
-            <h1 style="">404</h1>
-            <p style="">Looks like you are in a maze.</p>
-            <p style="">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum distinctio dolore, eligendi iusto quia facere.</p>
+    <div style="display: inline-block; width: 46%; margin-left: 27%; margin-top: 100px;">
+        <img style="width: 40%; float: left" src="./img/labirintas.webp" alt="">
+        <div style=" width: 50%; float: left; margin-left: 10%;">
+            <h1 style="font-size: 170px; margin: 0; color: darkgreen; ">404</h1>
+            <p style=" font-size: 24px; line-height: 1.2em; color: green; font-size: 20px;">Looks like you are in a maze.</p>
+            <p style=" font-size: 20px; line-height: 1.2em;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, quidem debitis praesentium alias possimus excepturi.</p>
+            </p>
         </div>
     </div>
 </body>
@@ -26,24 +27,43 @@
 
 <!--
 
+px - primityviausias matavimo vienetas
+% - realiatyvus
+em - proporcingas srifto dydziui pasirinktam (font-size)
+
+1em = 100% = 
+
 background-color: blue;
 color: black;
 
 font-size: 100px;
-font-family: Arial;
+font-family: Arial; 
+font-family: monospace;
 font-family: Verdana, Geneva, Tahoma, sans-serif;
-font-weight: bold;        // 700
-font-weight: normal;      // 400
+font-weight: bold;            // 700
+font-weight: normal;          // 400
 font-weight: 400;
-font-style: italic;
-text-decoration: underline;
+font-style: italic;           // pasvire
+text-decoration: underline;   // pabraukimas
+line-height: 30px;
 
 width: 200px;
 width: 100%;
 
 display: block;                // default, elementai deliojami vertikaliai
-display: inline;               // elgesi kaip tekstas
+display: inline;               // elgesi kaip tekstas. eina i viena eile, jei netelpa tad eina i kita
 display: none;                 // elementas nerodomas
-display: inline-block;         // mix tarp block ir line (elementai bus vienas salia kito, plotis bus kaip turinio, o kai daug turinio tai bus 100% tevinio elemento)
+display: inline-block;         // mix tarp block ir line(elementai bus vienas salia kito, plotis bus kaip turinio. Kai daug turinio, tai plotis bus kaip 100% tevinio elemento)
+
+float: left;                   // priverstinis elemento statymas horizontaliai
+float: right;    
+
+margin: 0px;                     // atstumas iki aplinkiniu elementu visomis kryptimis
+margin-top: 20px;  
+margin-right: 20px;       
+margin-bottom: 20px;         
+margin-left: 20px;
+
+height: 
 
 -->
